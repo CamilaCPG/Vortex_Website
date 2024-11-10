@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Nulshock";
+    src: url("Fonts/nulshock/nulshock\ bd.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("Fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'RobotoRegular', sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    text-align: left;
+}
+
+.bg-primary {
+    background-color: #2B2433 !important;
+}
+
+header .logo {
+    width: 110px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Nulshock';
+    margin: 0;
+    padding-left: 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+footer {
+    background-color: #2B2433 !important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
