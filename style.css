@@ -1,380 +1,404 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Nulshock";
-    src: url("Fonts/nulshock/nulshock\ bd.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Nulshock";
+  src: url("Fonts/nulshock/nulshock\ bd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "RobotoRegular";
-    src: url("Fonts/roboto/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "RobotoRegular";
+  src: url("Fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'RobotoRegular';
+  font-family: "RobotoRegular";
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2rem;
-    background-color: #2B2433;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #2b2433;
+  color: white;
 }
 
 .secao_esquerda {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .cabecalho header img.Logo {
-    width: 110px;
-    height: auto;
+  width: 110px;
+  height: auto;
 }
 
-
 span.Nome {
-    font-family: Nulshock;
-    font-size: 3.5rem;
-    color: white
+  font-family: Nulshock;
+  font-size: 3.5rem;
+  color: white;
 }
 
 .pesquisa {
-    display: flex;
-    align-items: center;
-    flex: 2;
-    max-width: 450px;
-    margin: 0 1rem;
-    position: relative;
+  display: flex;
+  align-items: center;
+  flex: 2;
+  max-width: 450px;
+  margin: 0 1rem;
+  position: relative;
 }
 
 .pesquisa input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    background-color: #fff;
-    color: #333;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .pesquisa input::placeholder {
-    color: #bbb;
+  color: #bbb;
 }
 
 .pesquisa input:focus {
-    border-color: #985FDB;
-    background-color: #f9f9f9;
+  border-color: #985fdb;
+  background-color: #f9f9f9;
 }
 
 .pesquisa button {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 0.75rem;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0.75rem;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 /* Efeito de hover no botão */
 .pesquisa button:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 /* Ícone da lupa */
 .pesquisa button img {
-    width: 20px;
-    height: 20px;
-    filter: none;
+  width: 20px;
+  height: 20px;
+  filter: none;
 }
 
 .botoes_laterais {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .botoes_laterais button {
-    background: none;
-    border: 2px solid transparent;
-    padding: 0.4rem 1rem;
-    margin: 0 0.3rem;
-    color: #D1B3FF;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: none;
+  border: 2px solid transparent;
+  padding: 0.4rem 1rem;
+  margin: 0 0.3rem;
+  color: #d1b3ff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .botoes_laterais button:hover {
-    background-color: rgba(156, 119, 202, 0.2);
-    color: #985FDB;
-    border-color: #985FDB;
+  background-color: rgba(156, 119, 202, 0.2);
+  color: #985fdb;
+  border-color: #985fdb;
 }
 
 .botoes_laterais button:hover {
-    background-color: #985FDB;
+  background-color: #985fdb;
 }
 
 .botoes_laterais img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .botoes_laterais span {
-    font-family: 'RobotoRegular', sans-serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    padding: 0.6rem 1.2rem;
-    padding-left: 0.5rem;
-    text-transform: none;
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  padding-left: 0.5rem;
+  text-transform: none;
 }
 
 .menu-opcoes {
-    width: 100%;
-    background-color: #985FDB;
+  width: 100%;
+  background-color: #985fdb;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    background: #1F1323;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #1f1323;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
 }
 
 .navbar button,
 .navbar button {
-    background: linear-gradient(135deg, #7b5ed6, #985FDB);
-    color: white;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(135deg, #7b5ed6, #985fdb);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #985FDB, #7b5ed6);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #985fdb, #7b5ed6);
 }
 
 .navbar button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    height: 100%;
-    width: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: skewX(-25deg);
-    transition: transform 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: transform 0.5s;
 }
 
 .navbar button:hover::before {
-    transform: skewX(-25deg) translateX(300px);
-    animation: shine 0.75s;
+  transform: skewX(-25deg) translateX(300px);
+  animation: shine 0.75s;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-conteudo {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .dropdown-conteudo a {
-    color: #333;
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
+  color: #333;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 .dropdown-conteudo a:hover {
-    background-color: #eeeeee;
-    color: #7b5ed6;
+  background-color: #eeeeee;
+  color: #7b5ed6;
 }
 
 .dropdown:hover .dropdown-conteudo {
-    display: block;
+  display: block;
 }
 
-
 .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff;
-    margin: 0 auto;
-    max-width: 1200px;
-    justify-content: center;
-    flex-wrap: nowrap;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .carousel::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .offer-card {
-    position: relative;
-    overflow: hidden;
-    flex: 0 0 auto;
-    width: 250px;
-    max-width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 250px;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .offer-card:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .offer-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .offer-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .offer-price {
-    color: #985FDB;
-    font-size: 20px;
-    font-weight: bold;
+  color: #985fdb;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .offer-old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
 }
 
 .offer-card {
-    position: relative;
-    overflow: hidden;
-    flex: 0 0 auto;
-    width: 250px;
-    max-width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 250px;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .offer-card:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .offer-timer {
-    background: #2B2433;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
+  background: #2b2433;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
 }
 
 .offer-card:hover .offer-timer span {
-    display: none;
+  display: none;
 }
 
 .offer-card:hover .offer-timer::before {
-    content: "";
-    background: url('Imagens/carrinho_de_compras.png') no-repeat center center;
-    background-size: 16px 16px;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    vertical-align: middle;
+  content: "";
+  background: url("Imagens/carrinho_de_compras.png") no-repeat center center;
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .offer-card:hover .offer-timer::after {
-    content: "Comprar";
-    font-weight: bold;
-    font-size: 1rem;
-    display: inline-block;
-    vertical-align: middle;
+  content: "Comprar";
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about {
+  margin: 20px;
+  border: 1px solid #985fdb;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.title {
+  font-family: Nulshock;
+  font-size: 45px;
+  font-style: italic;
 }
 
 /* Footer */
 footer {
-    background-color: #2B2433;
-    padding: 2rem 0;
-    text-align: center;
-    color: white;
-    border-top: 3px solid #985FDB;
-    margin-top: 2rem;
-    transition: none;
+  background-color: #2b2433;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+  border-top: 3px solid #985fdb;
+  margin-top: 2rem;
+  transition: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 /* Estilo do texto no footer */
 .footer-conteudo span {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #D1B3FF;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d1b3ff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: none;
 }
